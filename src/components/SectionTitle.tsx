@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
 export const SectionTitle =styled.section`
-color:red
+color:red;
+  text-align: center;
 `

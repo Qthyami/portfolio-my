@@ -6,16 +6,16 @@ export const Menu = () => {
     return (
         <>
             <StyledMenu>
-                <ScrollLink to="about" smooth={true} duration={500}>
+                <ScrollLink to="about" smooth={true} duration={500} offset={-76}>
                     About
                 </ScrollLink>
-                <ScrollLink to="skills" smooth={true} duration={500}>
+                <ScrollLink to="skills" smooth={true} duration={500} offset={-76}>
                     Tech Stack
                 </ScrollLink>
-                <ScrollLink to="projects" smooth={true} duration={500}>
+                <ScrollLink to="projects" smooth={true} duration={500} offset={-76}>
                     Projects
                 </ScrollLink>
-                <ScrollLink to="contact" smooth={true} duration={500}>
+                <ScrollLink to="contact" smooth={true} duration={500} offset={-76}>
                     Contact
                 </ScrollLink>
             </StyledMenu>

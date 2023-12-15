@@ -21,6 +21,8 @@ export const Main = () => {
 const StyledMain=styled.div`
     min-height: 100vh;
   background-color: bisque;
+  position: relative;
+  
 `
 
 const Photo=styled.img`
