@@ -19,7 +19,7 @@ export const Main = () => {
 };
 
 const StyledMain=styled.div`
-    min-height: 100vh;
+    min-height: 50vh;
   background-color: bisque;
   position: relative;
   

@@ -11,7 +11,7 @@ export const Skills = () => {
         <StyledSkills>
             <SectionTitle> Skills</SectionTitle>
 
-                <FlexWrapper wrap={"wrap"} justify={"space-between"}>
+                <FlexWrapper wrap={"wrap"} justify={"space-between"} align={"center"}>
                         <Skill title={"JS"} iconId={"JS"}/>
                         <Skill title={"Typescript"} iconId={"typescript"}/>
                         <Skill title={"React"} iconId={"react"}/>
@@ -25,6 +25,7 @@ export const Skills = () => {
                         <Skill title={"Styled Components"} iconId={"styled-components"}/>
                         <Skill title={"Material-UI"} iconId={"MUI"}/>
                         <Skill title={"Git"} iconId={"git"}/>
+                        <Skill title={"REST API"} iconId={"restApi"}/>
 
                 </FlexWrapper>
         </StyledSkills>

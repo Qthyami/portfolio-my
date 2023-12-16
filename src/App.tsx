@@ -2,7 +2,7 @@ import './App.css';
 
 import {Header} from "./layout/header/Header";
 import { Element } from 'react-scroll';
-import {Projects} from "./layout/sections/projects";
+import {Works} from "./layout/sections/works/works";
 import {Contact} from "./layout/sections/Contact";
 import {Skills} from "./layout/sections/skills/Skills";
 import {Main} from "./layout/sections/main/Main";
@@ -25,7 +25,7 @@ function App() {
                 <Skills/>
             </Element>
             <Element name="projects">
-                <Projects />
+                <Works />
             </Element>
             <Element name="contact">
                 <Contact />
