@@ -3,6 +3,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Work} from "./work/work";
 import SocNet from "../../../assets/projects/SocNet.png"
 import Counter from "../../../assets/projects/Counter.png"
+import {SectionTitle} from "../../../components/SectionTitle";
 
 
 export const Works = () => {
@@ -45,7 +46,3 @@ const StyledMenuItem = styled.li`
   cursor: pointer; /* Делаем курсор указателем при наведении */
 `;
 
-const SectionTitle = styled.h2`
- display: flex;
-  justify-content: center;
-`;

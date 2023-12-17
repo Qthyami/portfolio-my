@@ -3,10 +3,11 @@ import './App.css';
 import {Header} from "./layout/header/Header";
 import { Element } from 'react-scroll';
 import {Works} from "./layout/sections/works/works";
-import {Contact} from "./layout/sections/Contact";
+import {Contacts} from "./layout/sections/contacts/Contacts";
 import {Skills} from "./layout/sections/skills/Skills";
 import {Main} from "./layout/sections/main/Main";
 import {About} from "./layout/sections/about/About";
+import {Footer} from "./layout/footer/footer";
 
 
 function App() {
@@ -28,7 +29,10 @@ function App() {
                 <Works />
             </Element>
             <Element name="contact">
-                <Contact />
+                <Contacts />
+            </Element>
+            <Element name="footer">
+                <Footer />
             </Element>
         </div>
     );
