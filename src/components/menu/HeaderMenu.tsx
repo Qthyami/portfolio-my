@@ -2,20 +2,20 @@ import React from 'react';
 import { Link as ScrollLink } from 'react-scroll/modules';
 import styled from 'styled-components';
 
-export const Menu = () => {
+export const HeaderMenu = () => {
     return (
         <>
             <StyledMenu>
-                <MenuItem to="about" smooth={true} duration={500} offset={-76}>
+                <MenuItem to="about" smooth={true} duration={500} offset={-116}>
                     About
                 </MenuItem>
-                <MenuItem to="skills" smooth={true} duration={500} offset={-76}>
+                <MenuItem to="skills" smooth={true} duration={500} offset={-116}>
                     Tech Stack
                 </MenuItem>
-                <MenuItem to="projects" smooth={true} duration={500} offset={-76}>
+                <MenuItem to="projects" smooth={true} duration={500} offset={-116}>
                     Projects
                 </MenuItem>
-                <ContactItem to="contact" smooth={true} duration={500} offset={-76}>
+                <ContactItem to="contact" smooth={true} duration={500} offset={-96}>
                     Contact
                 </ContactItem>
             </StyledMenu>
@@ -35,7 +35,7 @@ const MenuItem = styled(ScrollLink)`
   margin: 0 15px;
   cursor: pointer;
   transition: color 0.1s ease; /* плавное изменение цвета текста при hover */
-  color: rgba(31, 38, 38, 1);
+  //color: rgba(31, 38, 38, 1);
   font-weight: 500;
   font-size: 16px;
 

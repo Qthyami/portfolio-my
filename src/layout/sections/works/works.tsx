@@ -4,6 +4,7 @@ import {Work} from "./work/work";
 import SocNet from "../../../assets/projects/SocNet.png"
 import Counter from "../../../assets/projects/Counter.png"
 import {SectionTitle} from "../../../components/SectionTitle";
+import {MenuWorks} from "../../../components/menu/MenuWorks";
 
 
 export const Works = () => {
@@ -12,11 +13,7 @@ export const Works = () => {
     return (
         <StyledWorks>
             <SectionTitle>My Works</SectionTitle>
-            <StyledMenuWorks>
-                {items.map((item, index) => (
-                    <StyledMenuItem key={index}>{item}</StyledMenuItem>
-                ))}
-            </StyledMenuWorks>
+            <MenuWorks items={items}/>
             <FlexWrapper justify={"space-around"}>
 <Work title={"Social Network"} text={"Social Network"} src={SocNet}/>
   <Work title={"Counter App"} text={"Counter"} src={Counter}/>
@@ -32,17 +29,6 @@ const StyledWorks = styled.section`
   background-color: #adf8f8;
 `;
 
-const StyledMenuWorks = styled.ul`
-  display: flex;
-  gap:30px;
-  justify-content: center; 
-  list-style-type: none; /* Убираем маркеры у списка */
- 
-`;
 
-const StyledMenuItem = styled.li`
-  margin-right: 10px; /* Расстояние между элементами списка */
-  text-decoration: underline; /* Подчеркиваем текст элемента */
-  cursor: pointer; /* Делаем курсор указателем при наведении */
-`;
+
 
