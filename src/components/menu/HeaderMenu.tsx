@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const HeaderMenu = () => {
     return (
         <>
-            <StyledMenu>
+            <StyledHeaderMenu>
                 <MenuItem to="about" smooth={true} duration={500} offset={-116}>
                     About
                 </MenuItem>
@@ -18,67 +18,50 @@ export const HeaderMenu = () => {
                 <ContactItem to="contact" smooth={true} duration={500} offset={-96}>
                     Contact
                 </ContactItem>
-            </StyledMenu>
+            </StyledHeaderMenu>
         </>
     );
 };
 
-const StyledMenu = styled.nav`
+const StyledHeaderMenu = styled.nav`
   display: flex;
   align-items: center;
   gap: 100px;
-  
 `;
+
 const MenuItem = styled(ScrollLink)`
   text-decoration: none;
-   /* цвет текста */
   margin: 0 15px;
   cursor: pointer;
-  transition: color 0.1s ease; /* плавное изменение цвета текста при hover */
-  //color: rgba(31, 38, 38, 1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   font-weight: 500;
   font-size: 16px;
-
+  font-family: Montserrat, sans-serif;
+  line-height: 20px;
+  text-align: left;
 
   &:hover {
-    color:  rgba(82, 34, 208, 1);
-  ; /* изменение цвета текста при наведении */
-  }
-
-  &.active {
-    /* стили для активной ссылки (если используете react-scroll) */
-    font-weight: bold;
+    background-color: rgba(82, 34, 208, 0.1); /* Изменение цвета фона при наведении */
+    color: rgba(82, 34, 208, 1); /* Изменение цвета текста при наведении */
+    border-radius: 20%;
   }
 `;
 
-const ContactItem = styled(ScrollLink)
+const ContactItem = styled(ScrollLink)`
+  padding: 12px 20px;
+  background: rgba(82, 34, 208, 12);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  margin: 0 15px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+  align-items: center;
 
-    ` //Width:  Hug (105px);
-//    Height:    Hug (45px);
-      padding: 12px 20px ;
-      background: rgba(82, 34, 208, 12);
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-
-      /* цвет текста */
-      margin: 0 15px;
-      cursor: pointer;
-
-
-      font-weight: 500;
-      font-size: 16px;
-      line-height:19.5px;
-      align-items:center;
-
-
-      &:hover {
-        background-color: rgb(121, 84, 211);; /* изменение цвета текста при наведении */
-      }
-
-      &.active {
-        /* стили для активной ссылки (если используете react-scroll) */
-        font-weight: bold;
-      }
-    `;
+  &:hover {
+    background-color: rgb(121, 84, 211);
+  }
+`;
 
