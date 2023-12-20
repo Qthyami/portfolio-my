@@ -8,7 +8,7 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper align={"center"} justify={"space-around"}>
+                <FlexWrapper align={"center"} justify={"space-around"} >
                     <div>
                         <SmallText>Hi There</SmallText>
                         <Name>I am Anton</Name>
@@ -28,7 +28,7 @@ export const Main = () => {
 };
 
 const StyledMain=styled.section`
-  min-height: 50vh;
+  min-height: 80vh;
   background-color: #b7874d;
   position: relative;
   display: flex;
@@ -36,17 +36,17 @@ const StyledMain=styled.section`
 `
 
 const Photo=styled.img`
-    max-width: 534px;
+  max-width: 534px;
   max-height: 400px;
   object-fit: cover;
-  
-    `
+
+`
 const MainTitle=styled.h1`
   font-size: 27px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-    `
+`
 const Name=styled.h2`
   font-size: 50px;
   font-style: normal;
@@ -55,7 +55,7 @@ const Name=styled.h2`
   letter-spacing: 2.5px;
   color:${theme.colors.secondaryColor} ;
   margin: 10px 0;
-    `
+`
 
 const SmallText=styled.span`
   font-family: Tinos;
@@ -67,16 +67,16 @@ const SmallText=styled.span`
 const PhotoWrapper=styled.div`
   position: relative;
   z-index: 1;
-&::before{
-  content:"";
-  width: 360px;
-  height: 470px;
-  border: 5px solid ${theme.colors.secondaryColor};
-  
-  position: absolute;
-  top:-24px;
-  right:-24px;
-  z-index: -1;
-  
-}
+  &::before{
+    content:"";
+    width: 412px;
+    height: 448px;
+    border: 5px solid ${theme.colors.secondaryColor};
+
+    position: absolute;
+    top:-24px;
+    right:-36px;
+    z-index: -1;
+
+  }
 `

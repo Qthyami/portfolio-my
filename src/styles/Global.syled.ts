@@ -35,8 +35,10 @@ button{
   background-color: unset;
   border:none
 }
-
-section:nth-of-type(n){
+  section{
+   
+  }
+section:nth-of-type(odd){
   background-color: ${theme.colors.primaryBg};
 }
 
