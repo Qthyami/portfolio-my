@@ -22,6 +22,7 @@ function App() {
             <Element name="about" >
                 <About/>
             </Element>
+
             <Element name="skills">
                 <Skills/>
             </Element>

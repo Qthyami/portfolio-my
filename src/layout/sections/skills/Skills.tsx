@@ -1,39 +1,40 @@
 import React from 'react';
-
 import styled from "styled-components";
-import {FlexWrapper} from "../../../components/FlexWrapper";
+import { FlexWrapper } from "../../../components/FlexWrapper";
+import { SectionTitle } from "../../../components/SectionTitle";
+import { Skill } from "./skill/Skill";
 
-import {SectionTitle} from "../../../components/SectionTitle";
-import {Skill} from "./skill/Skill";
+const skillsData = [
+    { title: "JS", iconId: "JS" },
+    { title: "Typescript", iconId: "typescript" },
+    { title: "React", iconId: "react" },
+    { title: "Redux", iconId: "redux", description: "classic Redux, Redux Toolkit, RTK Query" },
+    { title: "React Router", iconId: "react-router" },
+    { title: "Jest", iconId: "jest" },
+    { title: "Formik", iconId: "formik" },
+    { title: "Storybook", iconId: "storybook" },
+    { title: "HTML", iconId: "HTML" },
+    { title: "CSS", iconId: "CSS" },
+    { title: "Styled Components", iconId: "styled-components" },
+    { title: "Material-UI", iconId: "MUI" },
+    { title: "Git", iconId: "git" },
+    { title: "REST API", iconId: "restApi" },
+];
 
 export const Skills = () => {
     return (
         <StyledSkills>
-            <SectionTitle> Skills</SectionTitle>
-
-                <FlexWrapper wrap={"wrap"} justify={"space-between"} align={"center"}>
-                        <Skill title={"JS"} iconId={"JS"}/>
-                        <Skill title={"Typescript"} iconId={"typescript"}/>
-                        <Skill title={"React"} iconId={"react"}/>
-                        <Skill title={"Redux"} iconId={"redux"} description={"classic Redux, Redux Toolkit, RTK Query"}/>
-                        <Skill title={"React Router"} iconId={"react-router"}/>
-                        <Skill title={"Jest"} iconId={"jest"}/>
-                        <Skill title={"Formik"} iconId={"formik"}/>
-                        <Skill title={"Storybook"} iconId={"storybook"}/>
-                        <Skill title={"HTML"} iconId={"HTML"}/>
-                        <Skill title={"CSS"} iconId={"CSS"}/>
-                        <Skill title={"Styled Components"} iconId={"styled-components"}/>
-                        <Skill title={"Material-UI"} iconId={"MUI"}/>
-                        <Skill title={"Git"} iconId={"git"}/>
-                        <Skill title={"REST API"} iconId={"restApi"}/>
-
-                </FlexWrapper>
+            <SectionTitle>Skills</SectionTitle>
+            <FlexWrapper wrap={"wrap"} justify={"space-between"} align={"center"}>
+                {skillsData.map((skill, index) => (
+                    <Skill key={index} title={skill.title} iconId={skill.iconId} description={skill.description} />
+                ))}
+            </FlexWrapper>
         </StyledSkills>
     );
 };
 
-const StyledSkills=styled.section`
-min-height: 100vh;
+const StyledSkills = styled.section`
+  min-height: 100vh;
   background-color: burlywood;
-`
-
+`;

@@ -19,14 +19,9 @@ export const Skill = ({iconId, title, description}:SkillProps) => {
 
 const StyledSkill=styled.div`
   width:20%;
-  background-color: bisque;
+  border: 1px red solid;
   margin: 10px;
   
-  //flex-direction: column;
-  //justify-content: center;
-  //align-items: center;
-  
- 
 
 
   
