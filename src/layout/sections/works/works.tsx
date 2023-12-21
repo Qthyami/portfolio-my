@@ -25,7 +25,8 @@ export const Works = () => {
 };
 
 const StyledWorks = styled.section`
-  min-height: 100vh;
+  min-height: 50vh;
+  margin-bottom: 140px;
   background-color: #adf8f8;
 `;
 

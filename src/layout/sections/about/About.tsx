@@ -10,9 +10,22 @@ export const About = () => {
                 <FlexWrapper direction="column" align="flex-start">
                     <StyledAboutTitle>About mе</StyledAboutTitle>
                     <StyledAboutText>
+                        Когда усталость валит с ног
+                        И спится на ходу
+                        Когда молчит дверной звонок
+                        И чай не греет
+                        И даже мой любимый пёс
+                        Поджав свой хвост
+                        Добра не ждёт
 
+                        Когда усталость валит с ног
+                        И спится на ходу
+                        Когда молчит дверной звонок
+                        И чай не греет
+                        И даже мой любимый пёс
+                        Поджав свой хвост
+                        Добра не ждёт
 
-                        Длинный курган был построен на земле, ранее населенной в мезолите. Он состоял из подпрямоугольного земляного тумула, оцениваемого в длину 15 метров (50 футов), с камерой, построенной из сарсеновых мегалитов на его восточном конце. В эту камеру в неолите были помещены как похороненные, так и кремированные человеческие останки, представляющие по меньшей мере девять или десять человек.
                     </StyledAboutText>
                 </FlexWrapper>
             </Container>
@@ -42,6 +55,7 @@ const StyledAboutText = styled.p`
   &::before {
     content: '';
     position: absolute;
+    display: inline-block;
     top: 0;
     left: 0;
     width: 5px;
@@ -52,9 +66,11 @@ const StyledAboutText = styled.p`
   }
 `
 const StyledAbout=styled.section`
-  min-height: 80vh;
+  min-height: 100%;
   position: relative;
   display: flex;
+  margin-bottom: 140px;
+  
 
   
 `
